@@ -1,6 +1,6 @@
 <h1>Blog</h1>
 <div class="col">
-	{{#each comment}}	
+	{{#each comments}}	
 	<div class="lista">
 		<div class="separa">
 			<div class= "card-body">
@@ -29,12 +29,6 @@
 						</blockquote>
 					</div>
 				</li>
-				<form action="/componentes/deleteCom/{{_id}}?_method=DELETE" method="POST">
-				<input type="hidden" name="_method" value="DELETE">
-					<button class="btnDelete" type="submit">
-						Eliminar comentario
-					</button>
-				</form>
 			{{/each}}
 		</ul>
 		<blockquote>
