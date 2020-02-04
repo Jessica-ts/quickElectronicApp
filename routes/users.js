@@ -97,4 +97,8 @@ router.get('/videos', (req, res) => {
 	res.render('videos');
 });
 
+router.get('/comentar', (req, res) => {
+	res.render('comentar');
+});
+
 module.exports = router;
