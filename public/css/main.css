@@ -17,7 +17,7 @@ body
 	margin-bottom: 90px;
 }
 
-.titleVideos{
+.titleVideo{
 	border-top: 2px dotted black;
 }
 
@@ -85,7 +85,7 @@ h3{
 
 .container1 {
     width:900px;
-    margin:25px auto 50px;
+    margin:25px auto 80px;
     display:flex;
 }
 .container1 .box {
