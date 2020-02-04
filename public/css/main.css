@@ -85,7 +85,7 @@ h3{
 
 .container1 {
     width:900px;
-    margin:25px auto 80px;
+    margin:25px auto 100px;
     display:flex;
 }
 .container1 .box {
@@ -273,6 +273,10 @@ p
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+
+.video{
+	border-top: 2px dotted black;
 }
 
 .top{
