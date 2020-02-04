@@ -9,6 +9,13 @@
 
 				<p><img class="imageFile" src="/uploads/{{filename}}" alt="{{nombre}}"></p>
 
+				<<form action="/componentes/editar/{{_id}}?_method=PUT" method="POST">">
+					<input type="hidden" name="_method" value="Editar">
+					<button class="btnDelete" type="submit">
+						Editar
+					</button>
+				</form>
+
 				<form action="/componentes/delete/{{_id}}?_method=DELETE" method="POST">
 					<input type="hidden" name="_method" value="DELETE">
 					<button class="btnDelete" type="submit">
