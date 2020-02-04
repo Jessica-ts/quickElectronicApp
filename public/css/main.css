@@ -291,13 +291,12 @@ p
 	justify-content: center;
 }
 
-.topTiendas div{
+.topTiendas div, .bottomTiendas div{
 	border: 2px solid #001D7E;
 }
 
-.inteligencia{
-	width: 20%;
-}
+
+
 
 .contenedorAcerca{
 	margin-bottom: 115px;
