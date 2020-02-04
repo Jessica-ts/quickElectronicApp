@@ -285,6 +285,11 @@ p
 	margin-bottom: 20px;
 }
 
+.topTienda, .bottomTienda{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
 .contenedorAcerca{
 	margin-bottom: 115px;
