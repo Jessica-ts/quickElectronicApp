@@ -37,7 +37,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
-app.use(multer());	//Aqui es donde se subira la imagen
+app.use(multer({dest: path.join(__dirname, '/public/uploads/bookCovers')}).single('image'));	//Aqui es donde se subira la imagen
 
 // Global Variables
 app.use((req, res, next) => 
