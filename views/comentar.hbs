@@ -1,24 +1,7 @@
-<h1>Hola {{user.nombre}}</h1>
-
-<div class="lista">
-	<div class= "card-body">
-		<h4 class="card-title d-flex justify-content-between align-items-center">
-			{{postcomment.title}}
-		</h4>
-		<p> Author: {{postcomment.author}} </p>
-		<p> Description: {{postcomment.description}} </p>
-		<p> Price: {{postcomment.price}} </p>
-		<p> Where to get it? <br> {{postcomment.store}} </p>
-		<p><img class="imageFile" src="/uploads/{{postcomment.filename}}" alt="{{title}}"></p>
-	</div>
-</div>
-
-<!--Comments-->
-
-
+<h1>Blog</h1>
 <div class="card mt-2">
 	<div class="card-header d-flex justify-content-between align-items-center">
-		<h4> Reviews </h4>
+		<h4> Comentarios </h4>
 	</div>
 	<div class="card-body">
 		<ul class="list-group">
@@ -30,7 +13,7 @@
 						</blockquote>
 					</div>
 					<div class="row" d-flex justify-content-between align-items-center>
-						Posted by: 
+						Publicado por: 
 						<blockquote>
 								{{postedBy}}
 						</blockquote>
@@ -39,7 +22,7 @@
 				<form action="/componentes/deleteCom/{{_id}}?_method=DELETE" method="POST">
 				<input type="hidden" name="_method" value="DELETE">
 					<button class="btnDelete" type="submit">
-						Delete review
+						Eliminar comentario
 					</button>
 				</form>
 			{{/each}}
