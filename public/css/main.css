@@ -291,11 +291,17 @@ p
 	justify-content: center;
 }
 
+.topTiendas{
+	margin-bottom: 20px;
+}
+
 .topTiendas div, .bottomTiendas div{
 	border: 2px solid #001D7E;
 }
 
-
+.electronica, .techmake, .steren{
+	margin-left: 10px;
+}
 
 
 .contenedorAcerca{
