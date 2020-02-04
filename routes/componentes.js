@@ -94,16 +94,15 @@ router.get('/search', isAuthenticated, async(req, res) =>{
 
 });
 
-router.get('/componentes/:id/comentar', isAuthenticated, async (req, res) => 
+/*router.get('/componentes/:id/comentar', isAuthenticated, async (req, res) => 
 {
 	const postcomment = await Componente.findById(req.params.id);
 	const comments = await Comment.find({post_id : postcomment._id});
 	res.render('componentes/comentar', {postcomment, comments});
-});
+});*/
 
-router.post('/componentes/:id/comentar', isAuthenticated, async (req, res) => 
+router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
 {
-	const post = await Componente.findById(req.params.id);
 	if(post)	
 	{
 		const newComment = new Comment(
@@ -115,7 +114,7 @@ router.post('/componentes/:id/comentar', isAuthenticated, async (req, res) =>
 		newComment.post_id = post._id;
 		await newComment.save();
 
-		res.redirect('/componentes/' + post._id + '/comentar');
+		res.redirect('/componentes/comentar');
 	}
 });
 
