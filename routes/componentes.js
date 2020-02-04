@@ -97,7 +97,7 @@ router.get('/search', isAuthenticated, async(req, res) =>{
 
 router.get('/componentes/comentar', isAuthenticated, async (req, res) => 
 {
-	res.render('componentes/comentar');
+	res.render('views/comentar');
 });
 
 router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
@@ -116,7 +116,7 @@ router.post('/componentes/comentar', isAuthenticated, async (req, res) =>
 		newComment.post_id = uuid();
 		await newComment.save();
 
-		res.redirect('/componentes/comentar');
+		res.redirect('/views/comentar');
 	}
 });
 
