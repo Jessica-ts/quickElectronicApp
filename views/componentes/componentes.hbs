@@ -9,7 +9,7 @@
 
 				<p><img class="imageFile" src="/uploads/{{filename}}" alt="{{nombre}}"></p>
 
-				<form action="/componentes/editar-componente/{{Componente._id}}?_method=POST" method="PUT">
+				<form action="/componentes/editar-componente/{{Componente._id}}?_method=PUT" method="POST">
 					<input type="hidden" name="_method" value="Editar">
 					<button class="btnDelete" type="submit">
 						Editar
@@ -31,7 +31,6 @@
 			<div class = "card-body">
 				<h1> Hola {{user.nombre}} </h1>
 				<p class="lead"> No hay componentes aun </p>
-				<!--Con esto lo mandamos al formulario de agregar notas (porque no hay actualmente) -->
 				<a href="/componentes/add" class="btn btn-success"> Agrega un nuevo componente! </a>
 			</div>
 		</div>
