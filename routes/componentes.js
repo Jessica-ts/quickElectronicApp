@@ -97,8 +97,7 @@ router.get('/search', isAuthenticated, async(req, res) =>{
 
 router.get('/componentes/comentar', isAuthenticated, async (req, res) => 
 {
-	const comments = await Comment.find({post_id : postcomment._id});
-	res.render('componentes/comentar', {comments});
+	res.render('componentes/comentar');
 });
 
 router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
