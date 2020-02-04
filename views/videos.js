@@ -15,7 +15,8 @@ function searchVideo()
 				q:inputVideo,
 				maxResults:10,
 				type: "video",
-				key: apiKey
+				key: apiKey,
+				videoEmbeddable: true
 			},
 			method : "GET",
 			dataType: "json",
@@ -44,7 +45,8 @@ function nextPage()
 				q : inputVideo,
 				pageToken: next_Page,
 				type:"video",
-				key: apiKey
+				key: apiKey,
+				videoEmbeddable: true
 			},
 			method : "GET",
 			dataType : "json",
@@ -73,7 +75,8 @@ function previousPage()
 				part : "snippet",
 				type : "video",
 				pageToken : prev_Page,
-				key : apiKey
+				key : apiKey,
+				videoEmbeddable: true
 			},
 			method : "GET",
 			dataType : "json",
