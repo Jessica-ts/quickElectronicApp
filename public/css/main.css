@@ -81,7 +81,7 @@ h3{
 
 .container1 {
     width:900px;
-    margin:25px auto 0;
+    margin:25px auto 50px;
     display:flex;
 }
 .container1 .box {
@@ -338,7 +338,7 @@ p
 }
 
 .contenedorAcerca{
-	margin-bottom: 110px;
+	margin-bottom: 115px;
 }
 
 .ytButton{
