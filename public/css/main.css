@@ -17,6 +17,10 @@ body
 	margin-bottom: 90px;
 }
 
+.titleVideos{
+	border-top: 2px dotted black;
+}
+
 .subAcerca{
 	margin-bottom: 45px;
 }
@@ -90,7 +94,7 @@ h3{
     height:100px;
     box-sizing:border-box;
     text-align:center;
-    margin:0 10px  40px;
+    margin:0 10px 100px;
     background:#00171d;
     overflow:hidden;
     border-radius:4px;
