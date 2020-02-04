@@ -1,6 +1,7 @@
 body
 {
 	background: #FDFDFD;  
+	font-family: Verdana, sans-serif;
 }
 
 .titleAcerca{
@@ -9,7 +10,7 @@ body
 	margin-bottom: 45px;
 }
 .title{
-	margin-bottom: 67px;
+	margin-bottom: 65px;
 }
 
 .titleQuick{
@@ -337,7 +338,7 @@ p
 }
 
 .contenedorAcerca{
-	margin-bottom: 100px;
+	margin-bottom: 110px;
 }
 
 .ytButton{
