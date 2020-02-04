@@ -129,7 +129,7 @@ router.put('/componentes/editar-componente/:id', isAuthenticated, async (req,res
 	const {nombre, descripcion} = req.body;
 	await Componente.findByIdAndUpdate(req.params.id, {nombre, descripcion});
 	req.flash('success_msg', 'Componente agregado exitosamente');
-	res.redirect('/search');
+	res.redirect('/componentes');
 });
 
 router.delete('/componentes/delete/:id', isAuthenticated, async (req, res) => {
