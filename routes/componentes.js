@@ -85,7 +85,7 @@ router.get('/search', isAuthenticated, async(req, res) =>{
 	try	
 	{
 		const busquedas = await Componente.find(searchOptions).sort({date: 'desc'});
-		res.render('componentes/search-books', { busquedas, searchOptions:req.query.author, searchOptions:req.query.title});
+		res.render('componentes/search-componentes', { busquedas, searchOptions:req.query.author, searchOptions:req.query.title});
 	}
 	catch
 	{
