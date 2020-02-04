@@ -1,13 +1,13 @@
 {
-  "name": "bookapp",
+  "name": "quickElectronic",
   "version": "1.0.0",
-  "description": "App Book",
+  "description": "quickElectronic",
   "main": "index.js",
   "scripts": {
     "desarollo": "nodemon ./index.js",
     "start": "node ./index.js"
   },
-  "author": "Kassandra Martin del Campo",
+  "author": "Jessica Tovar",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.19.4"

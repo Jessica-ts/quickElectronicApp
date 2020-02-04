@@ -8,7 +8,7 @@ const session = require('express-session');
 const flash =  require('connect-flash');
 const passport = require('passport');
 const bodyParser = require('body-parser');
-var DB_URL=mongodb://localhost/quickElectronic;
+
 require('dotenv').config({path: 'variables.env'});
 
 
