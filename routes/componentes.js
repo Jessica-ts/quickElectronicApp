@@ -78,10 +78,6 @@ router.get('/componentes', isAuthenticated, async (req, res) => {
 router.get('/search', isAuthenticated, async(req, res) =>{
 	let searchOptions = {}
 
-	if(req.query.author != null && req.query.author !== '')
-	{
-		searchOptions.author = RegExp(req.query.author, 'i')
-	}
 	if(req.query.title != null && req.query.title !== '')
 	{
 		searchOptions.title = RegExp(req.query.title, 'i')
