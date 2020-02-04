@@ -116,7 +116,7 @@ router.post('/componentes/comentar', isAuthenticated, async (req, res) =>
 		newComment.post_id = uuid();
 		await newComment.save();
 
-		res.redirect('/views/comentar');
+		res.redirect('views/comentar');
 	}
 });
 
