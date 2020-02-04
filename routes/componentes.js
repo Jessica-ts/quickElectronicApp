@@ -94,12 +94,12 @@ router.get('/search', isAuthenticated, async(req, res) =>{
 
 });
 
-/*router.get('/componentes/:id/comentar', isAuthenticated, async (req, res) => 
+router.get('/componentes/:id/comentar', isAuthenticated, async (req, res) => 
 {
 	const postcomment = await Componente.findById(req.params.id);
 	const comments = await Comment.find({post_id : postcomment._id});
 	res.render('componentes/comentar', {postcomment, comments});
-});*/
+});
 
 router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
 {
