@@ -291,6 +291,10 @@ p
 	justify-content: center;
 }
 
+.topTiendas div{
+	border: 2px solid #001D7E;
+}
+
 .contenedorAcerca{
 	margin-bottom: 115px;
 }
