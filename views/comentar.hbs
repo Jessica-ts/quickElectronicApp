@@ -1,31 +1,33 @@
 <h1>Blog</h1>
 <div class="col">
-	{{#each comments}}	
+	{{#each comments as |comment|}}	
 	<div class="lista">
 		<div class="separa">
 			<div class= "card-body">
-				<p> Comentario: {{comment}}</p>
-				<p> Autor: {{postedBy}} </p> 
+				<p> Comentario: {{comment.comment}}</p>
+				<p> Autor: {{comment.postedBy}} </p> 
 			</div>
 		</div>
 	</div>
+	{{/each}}
+</div>
 <div class="card mt-2">
 	<div class="card-header d-flex justify-content-between align-items-center">
 		<h4> Comentarios </h4>
 	</div>
 	<div class="card-body">
 		<ul class="list-group">
-			{{#each comments}}
+			{{#each comments as |comment|}}	
 				<li class="list-group-item">
 					<div class="row">
 						<blockquote>
-								{{comment}}
+								{{comment.comment}}
 						</blockquote>
 					</div>
 					<div class="row" d-flex justify-content-between align-items-center>
 						Publicado por: 
 						<blockquote>
-								{{postedBy}}
+								{{comment.postedBy}}
 						</blockquote>
 					</div>
 				</li>
