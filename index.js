@@ -8,7 +8,7 @@ const session = require('express-session');
 const flash =  require('connect-flash');
 const passport = require('passport');
 const bodyParser = require('body-parser');
-
+var DB_URL=mongodb://localhost/quickElectronic;
 require('dotenv').config({path: 'variables.env'});
 
 
@@ -39,7 +39,7 @@ app.use(passport.session());
 app.use(flash());
 app.use(multer({dest: path.join(__dirname, '/public/uploads/componentes')}).single('image'));	//Aqui es donde se subira la imagen
 
-let DB_URL=mongodb://localhost/quickElectronic
+
 // Global Variables
 app.use((req, res, next) => 
 {
