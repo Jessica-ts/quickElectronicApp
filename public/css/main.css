@@ -285,63 +285,6 @@ p
 	margin-bottom: 20px;
 }
 
-.lionchip h3{
-	margin-top: 40px;
-}
-
-.steren{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.lionchip{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.lionchip img{
-	align-self: flex-end;
-}
-.electronica{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	margin-left: 10px;
-}
-
-.electronica img{
-	align-self: flex-end;
-	margin-bottom: 40px;
-	margin-top: 10px;
-}
-
-.electronica h3{
-	margin-bottom: 20px;
-	align-self: flex-end;
-}
-
-.techmake{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-left: 10px;
-}
-
-.techmake img{
-	margin-top: 20px; ;
-	margin-bottom: 40px;
-}
-
-
-.mecatronium, .steren{
-	margin-left: 10px;
-}
-
-.mecatronium img{
-	margin-bottom: 30px;
-}
 
 .contenedorAcerca{
 	margin-bottom: 115px;
