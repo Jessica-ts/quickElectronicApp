@@ -135,7 +135,7 @@ router.put('/componentes/editar-componente/:id', isAuthenticated, async (req,res
 
 router.delete('/componentes/delete/:id', isAuthenticated, async (req, res) => {
 	await Componente.findByIdAndDelete(req.params.id);
-	req.flash('success_msg', 'Componente elminado exitosamente');
+	req.flash('success_msg', 'Componente eliminado exitosamente');
 	res.redirect('/componentes');
 });
 
