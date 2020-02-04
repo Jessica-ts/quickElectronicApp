@@ -28,9 +28,7 @@ body
 	background-color: #02AAD1;
 }
 
-.top{
-	border-bottom: 2px dotted black;
-}
+
 h1{
 	text-align: center;
 	color: #006989;
@@ -85,7 +83,7 @@ h3{
 
 .container1 {
     width:900px;
-    margin:25px auto 100px;
+    margin:25px auto 110px;
     display:flex;
 }
 .container1 .box {
@@ -276,7 +274,7 @@ p
 }
 
 .video{
-	border-top: 2px dotted black;
+	border-bottom: 2px dotted black;
 }
 
 .top{
