@@ -1,9 +1,13 @@
 body
 {
-	background: #FDFDFD;  /* fallback for old browsers */
-	margin: 0;
+	background: #FDFDFD;  
 }
 
+.titleAcerca{
+	font-weight: 500;
+	font-size: 40px;
+	margin-bottom: 25px;
+}
 .title{
 	margin-bottom: 67px;
 }
