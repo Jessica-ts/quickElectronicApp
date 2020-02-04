@@ -103,8 +103,8 @@ router.get('/componentes/comentar', isAuthenticated, async (req, res) =>
 
 router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
 {
-	comment : req.body.comment;
-	postedBy: req.body.postedBy;
+	let comment = req.body.comment;
+	let postedBy =req.body.postedBy;
 
 	if(comment && postedBy)
 	{
