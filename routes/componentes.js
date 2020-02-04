@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs-extra');
 const router = express.Router();
+const uuid = require('uuid/v4')
 
 const {randomNumber} = require('../helpers/libs');
 
@@ -94,24 +95,26 @@ router.get('/search', isAuthenticated, async(req, res) =>{
 
 });
 
-router.get('/componentes/:id/comentar', isAuthenticated, async (req, res) => 
+router.get('/componentes/comentar', isAuthenticated, async (req, res) => 
 {
-	const postcomment = await Componente.findById(req.params.id);
 	const comments = await Comment.find({post_id : postcomment._id});
-	res.render('componentes/comentar', {postcomment, comments});
+	res.render('componentes/comentar', {comments});
 });
 
 router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
 {
-	if(post)	
+	comment : req.body.comment;
+	postedBy: req.body.postedBy;
+
+	if(comment && postedBy)
 	{
 		const newComment = new Comment(
 		{
-			comment : req.body.comment,
-			postedBy: req.body.postedBy
+			comment : comment,
+			postedBy: postedBy
 		});
 
-		newComment.post_id = post._id;
+		newComment.post_id = uuid();
 		await newComment.save();
 
 		res.redirect('/componentes/comentar');

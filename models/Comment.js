@@ -2,11 +2,10 @@
 const Schema = mongoose.Schema;*/
 
 const {Schema, model} = require('mongoose');
-const ObjectId = Schema.ObjectId;
 
 const CommentSchema = Schema(
 {
-	post_id: { type: ObjectId },
+	post_id: { type: String },
 	comment: { type: String },
 	postedBy: { type: String }
 });
