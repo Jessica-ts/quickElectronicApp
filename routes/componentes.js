@@ -8,7 +8,6 @@ const {randomNumber} = require('../helpers/libs');
 
 const Componente = require('../models/Componente');
 const User = require('../models/Usuario');
-//const Search = require('../models/Search');
 const Comment = require('../models/Comment');
 
 const {isAuthenticated} = require('../helpers/auth');
@@ -79,14 +78,14 @@ router.get('/componentes', isAuthenticated, async (req, res) => {
 router.get('/search', isAuthenticated, async(req, res) =>{
 	let searchOptions = {}
 
-	if(req.query.title != null && req.query.title !== '')
+	if(req.query.nombre != null)
 	{
-		searchOptions.title = RegExp(req.query.title, 'i')
+		searchOptions.nombre = RegExp(req.query.nombre, 'i')
 	}
 	try	
 	{
 		const busquedas = await Componente.find(searchOptions).sort({date: 'desc'});
-		res.render('componentes/search-componentes', { busquedas, searchOptions:req.query.author, searchOptions:req.query.title});
+		res.render('componentes/search-componentes', { busquedas, searchOptions:req.query.nombre});
 	}
 	catch
 	{
