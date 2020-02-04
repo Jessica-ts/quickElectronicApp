@@ -5,7 +5,7 @@ body
 }
 
 .title{
-	margin-bottom: 45px;
+	margin-bottom: 60px;
 }
 .navbar{
 	background-color: #02AAD1;
@@ -245,6 +245,9 @@ p
 	justify-content: justify;
 }
 
+.rowForm{
+	margin-bottom: 85px;
+}
 .row{
 	margin-bottom: 70px;
 }
