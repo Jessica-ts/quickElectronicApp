@@ -9,7 +9,7 @@
 
 				<p><img class="imageFile" src="/uploads/{{filename}}" alt="{{nombre}}"></p>
 
-				<<form action="/componentes/editar-componente/{{_id}}?_method=PUT" method="POST">
+				<form action="/componentes/editar/{{componente._id}}?_method=PUT" method="POST">
 					<input type="hidden" name="_method" value="Editar">
 					<button class="btnDelete" type="submit">
 						Editar
