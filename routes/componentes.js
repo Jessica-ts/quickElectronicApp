@@ -128,7 +128,7 @@ router.put('/componentes/editar-componente/:id', isAuthenticated, async (req,res
 {
 	const {nombre, descripcion} = req.body;
 	await Componente.findByIdAndUpdate(req.params.id, {nombre, descripcion});
-	req.flash('success_msg', 'Componente agregado exitosamente');
+	req.flash('success_msg', 'Componente editado exitosamente');
 	res.redirect('/componentes');
 });
 
