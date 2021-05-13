@@ -36,7 +36,7 @@ p
 		margin-bottom: 20px;
 	}
 
-	.navbar-nav{
+	#navbar-nav{
 		margin-right: auto;
 		background-color: #02AAD1;
 	}
@@ -59,7 +59,7 @@ p
 		margin-bottom: 20px;
 	}
 
-	.navbar-nav{
+	#navbar-nav{
 		margin-right: auto;
 		background-color: #02AAD1;
 	}
