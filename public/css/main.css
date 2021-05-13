@@ -36,6 +36,11 @@ p
 		margin-bottom: 20px;
 	}
 
+	.navbar-nav{
+		margin-right: auto;
+		background-color: #02AAD1;
+	}
+
 
 }
 
@@ -52,6 +57,11 @@ p
 		margin-top: 40px;
 		margin-left: 40px;
 		margin-bottom: 20px;
+	}
+
+	.navbar-nav{
+		margin-right: auto;
+		background-color: #02AAD1;
 	}
 
 }
