@@ -29,12 +29,6 @@ p
   		padding: 20px;
 	}
 
-	.logo{
-		width: 200px;
-		margin-top: 20px;
-		margin-left: 300px;
-		margin-bottom: 20px;
-	}
 
 }
 
@@ -46,12 +40,6 @@ p
   		padding: 20px;
 	}
 
-	.logo{
-		width: 300px;
-		margin-top: 25px;
-		margin-left: 350px;
-		margin-bottom: 21px;
-	}
 }
 
 @media(min-width: 901px)
