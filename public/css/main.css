@@ -20,10 +20,7 @@ p
 	text-align: justify;
 }
 
-
-@media (max-width: 520px)
-{
-	footer
+footer
 	{
   		background-color: #02AAD1;
   		padding: 40px;
@@ -60,11 +57,6 @@ p
 		color: white;
 
 	}
-	.logo{
-		width: 200px;
-		margin: 60px 40px 30px;
-	}
-
 
 	.navbar-nav{
 		margin-right: auto;
@@ -222,10 +214,6 @@ p
 		cursor: pointer;
 	}
 
-	.logo
-	{
-		width: 25%;
-	}
 
 	.separa
 	{
@@ -319,332 +307,32 @@ p
 
 	.tel{
 		text-align: center;
+	}
+
+
+@media (max-width: 520px)
+{
+	.logo{
+		width: 15%;
+		margin: 60px 40px 30px;
 	}
 
 }
 
 @media(min-width: 521px) and (max-width: 900px)
 {
-	footer
-	{
-  		background-color: #02AAD1;
-  		padding: 20px;
+	
+	.logo{
+		width: 20%;
+		margin: 60px 40px 30px;
 	}
-
-	.home{
-		width: 120px;
-		margin-top: 40px;
-		margin-left: 40px;
-		margin-bottom: 20px;
-	}
-
-	#navbar-nav{
-		margin-right: auto;
-		background-color: #02AAD1;
-	}
-
 }
 
 @media(min-width: 901px)
 {
-	footer
-	{
-  		background-color: #02AAD1;
-  		padding: 40px;
-	}
-
-	.titleAcerca{
-		font-weight: bold;
-		font-size: 40px;
-		margin-bottom: 45px;
-	}
-
-	.title{
-		margin-bottom: 65px;
-	}
-
-	.titleQuick{
-		margin-bottom: 90px;	
-	}
-
-	.titleVideo{
-		border-top: 2px dotted black;
-	}
-
-	.subAcerca{
-		margin-bottom: 45px;
-	}
-	.navbar{
-		background-color: #02AAD1;
-	}
-
-
-	#submitButton{
-		background-color: #001D7E;
-		color: white;
-
-	}
 	.logo{
-		width: 300px;
-		margin-top: 40px;
-		margin-left: 410px;
-		margin-bottom: 20px;
-	}
-
-
-	.navbar-nav{
-		margin-right: auto;
-	}
-
-	.home{
-		width: 8%;
-	}
-
-	.imageFile
-	{
-		width: 100px; 
-		height: 150px;
-		margin-bottom: 5px;
-	}
-
-	.nombre
-	{
-		margin-top: 100px;
-		text-align: center;
-
-	}
-
-	.form-group-c
-	{
-		margin-top: 10px;
-		width: 300px;
-		margin-bottom: 5px;
-	}
-
-	.container1 {
-	    width:900px;
-	    margin:25px auto 110px;
-	    display:flex;
-	}
-	.container1 .box {
-	    position:relative;
-	    width: 300px;
-	    height:100px;
-	    box-sizing:border-box;
-	    text-align:center;
-	    margin:0 10px 100px;
-	    background:#00171d;
-	    overflow:hidden;
-	    border-radius:4px;
-	    box-shadow:0 0 0 2px rgba(0,7,10,1);
-	}
-	.container1 .box .icon {
-	    width:100%;
-	    height:100%;
-	    background:#00171d;
-	    transition: 0.5s;
-	}
-	.container1 .box .icon .fa {
-	    font-size: 4em;
-	    line-height:100px;
-	    color: #0ff;
-	}
-	.container1 .box:hover .icon {
-	    transform:scale(0);
-	}
-	.container1 .box .details {
-	    position:absolute;
-	    top:0;
-	    left:0;
-	    width:100%;
-	    height:100%;
-	    background:#03a9f4;
-	    transition:0.5s;
-	    transform:scale(2);
-	    opacity:0;
-	}
-	.container1 .box:hover .details {
-	    transform:scale(1);
-	    opacity:1;
-	}
-	.container .box .details h3 {
-	    margin:0;
-	    padding:0;
-	    line-height:100px;
-	    font-size:24px;
-	    color:#fff;
-	}
-	.container1 .box .details:nth-child(2) .details {
-	    background:#e91e63;
-	    padding: auto;
-	}
-	.container1 .box .details:nth-child(2) .details {
-	    background:#607d8b;
-	}
-
-	.about
-	{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 20px;
-	}
-
-	#about
-	{
-		text-align: center;
-		color: #006989;
-	}
-
-	.titulo
-	{
-		height: 500px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-family: sans-serif;
-	}
-
-	.search-field
-	{
-		height: 50px;
-		width: 600px;
-		justify-content: center;
-		display: flex; 
-		padding: 10px;
-		border: none;
-		border-radius: 25px;
-		outline: none;
-	}
-
-	.pos
-	{
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	.find-book
-	{
-		color: #fff;
-		margin-bottom: 30px;
-		font-size: 45px ;
-		letter-spacing: 2px;
-		text-align: center;
-	}
-
-	.search-btn
-	{
-		height: 50px;
-		width: 150px;
-		background: darkcyan;
-		border: none;
-		color: white;
-		border-radius: 25px;
-	}
-
-	.search-btn:hover
-	{
-		background: darkslategray;
-		cursor: pointer;
-	}
-
-	.logo
-	{
 		width: 25%;
+		margin: 60px 40px 30px;
 	}
 
-	.separa
-	{
-		padding-bottom: 2px;
-		border-bottom: 5px solid black;
-	}
-
-	.lista
-	{
-		margin-bottom: 20px;
-	}
-
-	.btnDelete
-	{
-		display: block;
-		color: white;
-		background: darkcyan;
-		margin-bottom: 10px;
-	}
-
-	.btnDelete:hover
-	{
-		background: darkslategray;
-		cursor: pointer;
-	}
-
-
-	.text
-	{
-		justify-content: center;
-		text-align: center;
-	}
-
-	.letra 
-	{
-		color:#20639B;
-	}
-
-
-	.rowForm{
-		margin-bottom: 93px;
-	}
-	.row{
-		margin-bottom: 70px;
-	}
-
-	.top, .bottom{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.video{
-		border-bottom: 2px dotted black;
-	}
-
-	.top{
-		margin-bottom: 20px;
-	}
-
-	.bottom{
-		margin-bottom: 20px;
-	}
-
-	.topTiendas, .bottomTiendas{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.topTiendas{
-		margin-bottom: 20px;
-	}
-
-	.topTiendas div, .bottomTiendas div{
-		border: 2px solid #001D7E;
-	}
-
-	.electronica, .techmake, .steren{
-		margin-left: 10px;
-	}
-
-
-	.contenedorAcerca{
-		margin-bottom: 115px;
-	}
-
-	.ytButton{
-		display: none;
-	}
-
-	.tel{
-		text-align: center;
-	}
 }
-
