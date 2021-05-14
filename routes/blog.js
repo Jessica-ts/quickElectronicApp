@@ -41,10 +41,8 @@ router.post('/componentes/comentar', isAuthenticated, async (req, res) =>
 
 		//newComment.post_id = uuid();
 		await newComment.save();
+		req.flash('success_msg', 'Comentario agregado correctamente');
 	}
-		
-
-	
 	res.redirect('/comentar');
 });
 
