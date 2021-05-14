@@ -45,7 +45,7 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 		}
 		const imagebc = req.file.path;
 		const ext = path.extname(req.file.originalname).toLowerCase();
-		const targetPath = path.resolve('public/uploads/componentes/${imgUrl}${ext}');
+		const targetPath = path.resolve(`public/uploads/componentes/${imgUrl}${ext}`);
 
 		if(ext === '.png' || ext ==='.jpg' || ext === '.jpeg')
 		{
