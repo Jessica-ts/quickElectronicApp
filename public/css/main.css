@@ -62,7 +62,7 @@ p
 
 .navbar-nav
 {
-	margin-right: auto;
+	margin-left: auto;
 }
 
 .home{
@@ -361,6 +361,7 @@ p
   		margin-bottom: 55px;
 	}
 
+	
 }
 
 @media(min-width: 521px) and (max-width: 900px)

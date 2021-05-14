@@ -45,9 +45,9 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 		}
 		const imagebc = req.file.path;
 		const ext = path.extname(req.file.originalname).toLowerCase();
-		const targetPath = path.resolve(`public/uploads/${imgUrl}${ext}`);
+		const targetPath = path.resolve('public/uploads/componentes/${imgUrl}${ext}');
 
-		if(ext === '.png' || ext ==='.jpg' || ext === '.jpeg' || ext === '.gif')
+		if(ext === '.png' || ext ==='.jpg' || ext === '.jpeg')
 		{
 			//Rename mueve un archivo de un directorio a otro
 			await fs.rename(imagebc, targetPath);
