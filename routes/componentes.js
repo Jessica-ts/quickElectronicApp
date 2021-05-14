@@ -58,6 +58,7 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 				descripcion: req.body.descripcion,  
 				filename: imgUrl + ext
 			})
+			newComponente.user = req.user.id;
 			await newComponente.save();
 			req.flash('success_msg', 'Componente agregado correctamente');
 			
