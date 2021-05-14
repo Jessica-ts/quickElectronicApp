@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs-extra');
 const router = express.Router();
 const uuid = require('uuid/v4')
-
+const multer = require ('multer');
 const {randomNumber} = require('../helpers/libs');
 
 const Componente = require('../models/Componente');
@@ -12,6 +12,8 @@ const Comment = require('../models/Comment');
 
 const {isAuthenticated} = require('../helpers/auth');
 
+let bodyParser = require('body-parser');
+let jsonParser = bodyParser.json();
 
 router.get('/componentes/add', isAuthenticated, (req, res) => 
 {
@@ -129,11 +131,11 @@ router.put('/componentes/editar-componente/:id', isAuthenticated, jsonParser, as
 	const {nombre, descripcion} = req.body;
 
 	if(filename=="")
-    	await Book.findByIdAndUpdate(req.params.id, { nombre, descripcion, filename});
+    	await Componente.findByIdAndUpdate(req.params.id, { nombre, descripcion, filename});
 
     else
-    	await Book.findByIdAndUpdate(req.params.id, { nombre, descripcion});
-    
+    	await Componente.findByIdAndUpdate(req.params.id, { nombre, descripcion});
+
 	req.flash('success_msg', 'Componente editado exitosamente');
 	res.redirect('/componentes');
 });
