@@ -107,16 +107,30 @@ router.get('/componentes/comentar', isAuthenticated, async (req, res) =>
 router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
 {
 	const {comment, postedBy} = req.body;
-		
-	const newComment = new Comment(
-	{
-		post_id :uuid(),
-		comment : req.body.comment,
-		postedBy: req.body.postedBy
-	});
+	const errors = [];
 
-	//newComment.post_id = uuid();
-	await newComment.save();
+	if(!comment)
+	{
+		errors.push({text: 'Escribe un comentario'});
+	}
+	else if(!postedBy)
+	{
+		errors.push({text: 'Escribe un nombre'});
+	}
+
+	else
+	{
+		const newComment = new Comment(
+		{
+			post_id :uuid(),
+			comment : req.body.comment,
+			postedBy: req.body.postedBy
+		});
+
+		//newComment.post_id = uuid();
+		await newComment.save();
+	}
+		
 
 	
 	res.redirect('/comentar');
