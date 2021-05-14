@@ -361,6 +361,11 @@ p
   		margin-bottom: 55px;
 	}
 
+	#navbarNav
+	{
+		margin-left: auto;
+	}
+
 	
 }
 
