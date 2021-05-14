@@ -124,10 +124,16 @@ router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
 	res.render('/componentes/editar-componente', {componente});
 });
 
-router.put('/componentes/editar-componente/', isAuthenticated, async (req,res) => 
+router.put('/componentes/editar-componente/:id', isAuthenticated, jsonParser, async (req,res) => 
 {
 	const {nombre, descripcion} = req.body;
-	await Componente.findOneAndUpdate(req.params.id, {nombre, descripcion});
+
+	if(filename=="")
+    	await Book.findByIdAndUpdate(req.params.id, { nombre, descripcion, filename});
+
+    else
+    	await Book.findByIdAndUpdate(req.params.id, { nombre, descripcion});
+    
 	req.flash('success_msg', 'Componente editado exitosamente');
 	res.redirect('/componentes');
 });

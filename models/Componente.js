@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 const path = require('path');
 
-const coverImageBasePath = 'uploads/bookCovers'
+const coverImageBasePath = 'uploads/componentes'
 
 const ComponenteSchema = new Schema({
 	nombre: {type: String, required: true},
