@@ -113,14 +113,14 @@ router.post('/componentes/comentar', isAuthenticated, async (req, res) =>
 	{
 		const newComment = new Comment(
 		{
-			comment : comment,
-			postedBy: postedBy
+			comment : req.body.comment,
+			postedBy: req.body.postedBy
 		});
 
 		newComment.post_id = uuid();
 		await newComment.save();
 
-		res.redirect('/comentar');
+		res.redirect('/componentes/' + post._id + '/comentar');
 	}
 });
 
