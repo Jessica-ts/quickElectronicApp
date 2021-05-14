@@ -131,7 +131,7 @@ router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
 
 router.put('/componentes/editar-componente/:id', isAuthenticated, jsonParser, async (req,res) => 
 {
-	const {nombre, descripcion} = req.body;
+	const {nombre, descripcion, filename} = req.body;
 
 	if(filename=="")
     	await Componente.findByIdAndUpdate(req.params.id, { nombre, descripcion, filename});
