@@ -121,7 +121,7 @@ router.post('/componentes/comentar', isAuthenticated, async (req, res) =>
 		await newComment.save();
 
 	}
-	res.redirect('/componentes/' + post._id + '/comentar');
+	res.redirect('/comentar');
 });
 
 router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
