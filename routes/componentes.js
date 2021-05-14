@@ -24,23 +24,24 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 {
 	const {nombre,descripcion} = req.body;
 	const errors = [];
+	const imgUrl = randomNumber();
+	const repetir = await Componente.find({filename : imgUrl});
 
 	if(!nombre)
 	{
 		errors.push({text: 'Escribe un nombre'});
 	}
-	if(!descripcion)
+	else if(!descripcion)
 	{
 		errors.push({text: 'Escribe una descripcion'});
 	}
-	if(errors.length>0)
+	else if(errors.length>0)
 	{
 		res.render('componentes/nuevo-componente', {errors, nombre, descripcion});
 	}
 	else
 	{
-		const imgUrl = randomNumber();
-		const repetir = await Componente.find({filename : imgUrl});
+		
 		if(repetir.length > 0)
 		{
 			imgUrl = randomNumber();
@@ -54,6 +55,7 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			//Rename mueve un archivo de un directorio a otro
 			await fs.rename(imagebc, targetPath);
 			const newComponente = new Componente({
+				id :uuid(),
 				nombre : req.body.nombre,
 				descripcion: req.body.descripcion,  
 				filename: imgUrl + ext
