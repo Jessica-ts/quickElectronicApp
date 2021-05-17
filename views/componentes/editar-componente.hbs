@@ -4,21 +4,21 @@
 			<h3> Edita un componente </h3>
 		</div>
 		<div class="card-body">
-			<form action="/componentes/editar-componente/{{componente._id}}?_method=PUT" method="POST">
+			<form action="/componentes/editar-componente/{{Componente._id}}?_method=PUT" method="POST">
 				<input type="hidden" name="_method" value="PUT">
 				<div class="form-group">
-					<input type="text" name="nombre" class="form-control" placeholder="Title" value="{{componente.nombre}}">
+					<input type="text" name="nombre" class="form-control" placeholder="Title" value="{{Componente.nombre}}">
 				</div>
 				
 				<div class="form-group">
 					<textarea name="descripcion" class="form-control">
-						{{componente.descripcion}
+						{{Componente.descripcion}
 					</textarea>
 				</div>
 				
 				<div class="form-group">
 					<div class="custom-file">
-						<input type="file" name="image" class="custom-file-input" id="inputGroup" aria-describedby="inputGroupFileAddon" value="{{componente.image}}">
+						<input type="file" name="image" class="custom-file-input" id="inputGroup" aria-describedby="inputGroupFileAddon" value="{{Componente.image}}">
 						<label class="custom-file-label" for="inputGroupFile">
 							Elegir archivo
 						</label>					

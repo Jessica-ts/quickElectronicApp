@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs-extra');
 const router = express.Router();
-const uuid = require('uuid/v4')
+//const uuid = require('uuid/v4')
 const multer = require ('multer');
 const {randomNumber} = require('../helpers/libs');
 
@@ -31,16 +31,16 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 	{
 		errors.push({text: 'Escribe un nombre'});
 	}
-	else if(!descripcion)
+	if(!descripcion)
 	{
 		errors.push({text: 'Escribe una descripcion'});
 	}
-	else if(errors.length>0)
+	if(errors.length>0)
 	{
 		res.render('componentes/nuevo-componente', {errors, nombre, descripcion});
 	}
-	else
-	{
+	
+	
 		
 		if(repetir.length > 0)
 		{
@@ -55,7 +55,7 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			//Rename mueve un archivo de un directorio a otro
 			await fs.rename(imagebc, targetPath);
 			const newComponente = new Componente({
-				//id :uuid(),
+				
 				nombre : req.body.nombre,
 				descripcion: req.body.descripcion,  
 				filename: imgUrl + ext
@@ -71,7 +71,7 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			req.flash('error_msg', 'Solo se aceptan imagenes en este campo');
 		}
 		res.redirect('/componentes');
-	}
+	
 
 });
 
