@@ -5,11 +5,9 @@ const path = require('path');
 const coverImageBasePath = 'uploads/componentes'
 
 const ComponenteSchema = new Schema({
-	id : {type: String},
-	nombre: {type: String, required: true},
-	descripcion: { type: String, required: true},
+	nombre: String,
+	descripcion: String,
 	filename: { type: String },
-	fecha: {type: Date, default: Date.now},
 	usuario : {type : String}
 });
 
