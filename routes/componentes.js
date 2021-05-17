@@ -55,7 +55,7 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			//Rename mueve un archivo de un directorio a otro
 			await fs.rename(imagebc, targetPath);
 			const newComponente = new Componente({
-				id :uuid(),
+				//id :uuid(),
 				nombre : req.body.nombre,
 				descripcion: req.body.descripcion,  
 				filename: imgUrl + ext
@@ -107,10 +107,10 @@ router.get('/componentes/comentar', isAuthenticated, async (req, res) =>
 
 router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
 	const componente = await Componente.findById(req.params.id);
-	res.render('./views/componentes/editar-componente', {componente});
+	res.render('/componentes/editar-componente', {componente});
 });
 
-router.put('./views/componentes/editar-componente/:id', isAuthenticated, jsonParser, async (req,res) => 
+router.put('/componentes/editar-componente/:id', isAuthenticated, jsonParser, async (req,res) => 
 {
 	const {nombre, descripcion, filename} = req.body;
 
