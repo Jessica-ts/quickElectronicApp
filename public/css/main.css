@@ -355,7 +355,6 @@ p
 	{
   		background-color: #02AAD1; 
   		padding: 47px;
-  		margin-bottom: 55px;
   		position: fixed;
   		width: 100%;
   		bottom: 0;
@@ -382,7 +381,6 @@ p
 	{
   		background-color: #02AAD1; 
   		padding: 40px;
-  		margin-bottom: 30px;
   		position: fixed;
   		width: 100%;
   		bottom: 0;
@@ -404,7 +402,6 @@ p
 	footer
 	{
   		background-color: #02AAD1; 
-  		padding: 40px;
   		position: fixed;
   		width: 100%;
   		bottom: 0;
