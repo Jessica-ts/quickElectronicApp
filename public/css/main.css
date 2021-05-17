@@ -357,7 +357,7 @@ p
   		height:30px;
   		position: fixed;
   		width: 100%;
-  		bottom: 0;
+  		bottom: 5px;
   		left: 0;
 	}
 
@@ -384,7 +384,7 @@ p
   		height:30px;
   		position: fixed;
   		width: 100%;
-  		bottom: 0;
+  		bottom: 5px;
   		left: 0;
 	}
 
@@ -406,7 +406,7 @@ p
   		background-color: #02AAD1; 
   		position: fixed;
   		width: 100%;
-  		bottom: 0;
+  		bottom: 5px;
   		left: 0;
   		height:30px;
 	}
