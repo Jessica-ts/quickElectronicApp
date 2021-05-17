@@ -104,37 +104,6 @@ router.get('/componentes/comentar', isAuthenticated, async (req, res) =>
 	res.render('/comentar');
 });
 
-router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
-{
-	const {comment, postedBy} = req.body;
-	const errors = [];
-
-	if(!comment)
-	{
-		errors.push({text: 'Escribe un comentario'});
-	}
-	else if(!postedBy)
-	{
-		errors.push({text: 'Escribe un nombre'});
-	}
-
-	else
-	{
-		const newComment = new Comment(
-		{
-			post_id :uuid(),
-			comment : req.body.comment,
-			postedBy: req.body.postedBy
-		});
-
-		//newComment.post_id = uuid();
-		await newComment.save();
-	}
-		
-
-	
-	res.redirect('/comentar');
-});
 
 router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
 	const componente = await Componente.findById(req.params.id);
