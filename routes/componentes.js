@@ -110,7 +110,7 @@ router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
 	res.render('componentes/editar-componente', {componente});
 });
 
-router.put('componentes/editar-componente/:id', isAuthenticated, jsonParser, async (req,res) => 
+router.put('/componentes/editar-componente/:id', isAuthenticated, jsonParser, async (req,res) => 
 {
 	const {nombre, descripcion, filename} = req.body;
 
