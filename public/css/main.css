@@ -21,6 +21,16 @@ p
 	text-align: justify;
 }
 
+#user-logo
+{
+	margin-bottom: 40px;
+}
+
+.result-video
+{
+	margin-bottom: 40px;
+}
+
 .titleAcerca
 {
 	font-weight: bold;
@@ -316,6 +326,11 @@ p
 	margin-bottom: 20px;
 }
 
+.bottomTiendas
+{
+	margin-bottom: 40px;
+}
+
 .topTiendas div, .bottomTiendas div
 {
 	border: 2px solid #001D7E;
@@ -408,7 +423,7 @@ p
   		width: 100%;
   		bottom: 0;
   		left: 0;
-  		height:40px;
+  		height:60px;
 	}
 
 }
