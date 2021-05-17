@@ -419,7 +419,7 @@ p
 	footer
 	{
   		background-color: #02AAD1; 
-  		position: absolute;
+  		position: sticky;
   		width: 100%;
   		bottom: 0;
   		left: 0;

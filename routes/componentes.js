@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs-extra');
 const router = express.Router();
-//const uuid = require('uuid/v4')
 const multer = require ('multer');
 const {randomNumber} = require('../helpers/libs');
 
@@ -107,6 +106,7 @@ router.get('/componentes/comentar', isAuthenticated, async (req, res) =>
 
 router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
 	const componente = await Componente.findById(req.params.id);
+	console.log(componente);
 	res.render('componentes/editar-componente', {componente});
 });
 
