@@ -104,7 +104,7 @@ router.get('/componentes/comentar', isAuthenticated, async (req, res) =>
 });
 
 
-router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
+router.get('/componentes/edit/:id',isAuthenticated, async (req, res) => {
 	const componente = await Componente.findById(req.params.id);
 	console.log(componente);
 	res.render('componentes/editar-componente', {componente});
