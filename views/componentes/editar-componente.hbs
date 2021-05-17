@@ -33,3 +33,24 @@
 		</div>
 	</div>
 </div>
+
+
+router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
+	const componente = await Componente.findById(req.params.id);
+	console.log(componente);
+	res.render('componentes/editar-componente', {componente});
+});
+
+router.put('/componentes/editar-componente/:id', isAuthenticated, jsonParser, async (req,res) => 
+{
+	const {nombre, descripcion, filename} = req.body;
+
+	if(filename=="")
+    	await Componente.findByIdAndUpdate(req.params.id, { nombre, descripcion, filename});
+
+    else
+    	await Componente.findByIdAndUpdate(req.params.id, { nombre, descripcion});
+
+	req.flash('success_msg', 'Componente editado exitosamente');
+	res.redirect('/componentes');
+});
