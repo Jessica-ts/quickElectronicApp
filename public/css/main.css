@@ -23,7 +23,7 @@ p
 
 #user-logo
 {
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 
 .result-video
@@ -328,7 +328,7 @@ p
 
 .bottomTiendas
 {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 .topTiendas div, .bottomTiendas div
@@ -370,7 +370,7 @@ p
 	{
   		background-color: #02AAD1; 
   		height:30px;
-  		position: fixed;
+  		position: absolute;
   		width: 100%;
   		bottom: 5px;
   		left: 0;
@@ -397,7 +397,7 @@ p
 	{
   		background-color: #02AAD1; 
   		height:30px;
-  		position: fixed;
+  		position: absolute;
   		width: 100%;
   		bottom: 5px;
   		left: 0;
@@ -419,7 +419,7 @@ p
 	footer
 	{
   		background-color: #02AAD1; 
-  		position: fixed;
+  		position: absolute;
   		width: 100%;
   		bottom: 0;
   		left: 0;
