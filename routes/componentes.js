@@ -61,6 +61,7 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			})
 			newComponente.user = req.user.id;
 			await newComponente.save();
+			console.log(newComponente);
 			req.flash('success_msg', 'Componente agregado correctamente');
 			
 		}
