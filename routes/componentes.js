@@ -61,7 +61,6 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			})
 			newComponente.user = req.user.id;
 			await newComponente.save();
-			console.log(newComponente);
 			req.flash('success_msg', 'Componente agregado correctamente');
 			
 		}
@@ -70,6 +69,8 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			await fs.unlink(imagebc);
 			req.flash('error_msg', 'Solo se aceptan imagenes en este campo');
 		}
+		console.log(newComponente);
+		console.log("Hello World");
 		res.redirect('/componentes');
 	
 
