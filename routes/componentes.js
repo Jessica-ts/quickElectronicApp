@@ -62,6 +62,7 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			newComponente.user = req.user.id;
 			await newComponente.save();
 			console.log(newComponente);
+			console.log("Agregue componente");
 			req.flash('success_msg', 'Componente agregado correctamente');
 			
 		}
@@ -108,7 +109,7 @@ router.get('/componentes/comentar', isAuthenticated, async (req, res) =>
 router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
 	const componente = await Componente.findById(req.params.id);	
 	console.log(componente);
-	res.render('componentes/editar-componente.hbs', {componente});
+	res.render('componentes/editar-componente', {componente});
 });
 
 router.put('/componentes/editar-componente/:id', isAuthenticated, jsonParser, async (req,res) => 
