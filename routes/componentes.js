@@ -30,17 +30,17 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 	{
 		errors.push({text: 'Escribe un nombre'});
 	}
-	if(!descripcion)
+	else if(!descripcion)
 	{
 		errors.push({text: 'Escribe una descripcion'});
 	}
-	if(errors.length>0)
+	else if(errors.length>0)
 	{
 		res.render('componentes/nuevo-componente', {errors, nombre, descripcion});
 	}
 	
-	
-		
+	else
+	{	
 		if(repetir.length > 0)
 		{
 			imgUrl = randomNumber();
@@ -62,7 +62,6 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			newComponente.user = req.user.id;
 			await newComponente.save();
 			console.log(newComponente);
-			console.log("Agregue componente");
 			req.flash('success_msg', 'Componente agregado correctamente');
 			
 		}
@@ -71,7 +70,9 @@ router.post('/componentes/nuevo-componente', isAuthenticated, async (req, res) =
 			await fs.unlink(imagebc);
 			req.flash('error_msg', 'Solo se aceptan imagenes en este campo');
 		}
+		console.log("Agregue componente");
 		res.redirect('/componentes');
+	}
 	
 
 });
@@ -132,12 +133,12 @@ router.delete('/componentes/delete/:id', isAuthenticated, async (req, res) => {
 	res.redirect('/componentes');
 });
 
-router.delete('/componentes/deleteCom/:id', isAuthenticated, async (req, res) => 
+/*router.delete('/componentes/deleteCom/:id', isAuthenticated, async (req, res) => 
 {
 	await Comment.findByIdAndDelete(req.params.id);
 
 	req.flash('success_msg', 'Comentario eliminado exitosamente');
 	res.redirect('/componentes');
-});
+});*/
 
 module.exports = router;
