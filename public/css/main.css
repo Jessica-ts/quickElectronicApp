@@ -370,17 +370,34 @@ p
 	{
   		background-color: #02AAD1; 
   		height:30px;
-  		position: absolute;
+  		position: fixed;
   		width: 100%;
   		bottom: 5px;
   		left: 0;
 	}
 
-	.navbar-nav
+
+	.topTiendas, .bottomTiendas
 	{
-		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
+	.container1 
+	{
+		width:900px;
+		margin:25px auto 110px;
+		display:flex;
+		flex-direction: column;
+	}
+
+	.top, .bottom
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 	
 }
 
@@ -397,7 +414,7 @@ p
 	{
   		background-color: #02AAD1; 
   		height:30px;
-  		position: absolute;
+  		position: fixed;
   		width: 100%;
   		bottom: 5px;
   		left: 0;
