@@ -312,16 +312,6 @@ p
 	justify-content: center;
 }
 
-.topTiendas
-{
-	margin-bottom: 20px;
-}
-
-.bottomTiendas
-{
-	margin-bottom: 60px;
-}
-
 .topTiendas div, .bottomTiendas div
 {
 	border: 2px solid #001D7E;
@@ -392,7 +382,7 @@ p
 
 	.lionchip, .electronica, .techmake, .mecatronium, .steren
 	{
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 		display: flex;
 		justify-content: center;
 	}
@@ -441,6 +431,16 @@ p
   		bottom: 0;
   		left: 0;
   		height:60px;
+	}
+
+	.topTiendas
+	{
+		margin-bottom: 20px;
+	}
+
+	.bottomTiendas
+	{
+		margin-bottom: 60px;
 	}
 
 }
