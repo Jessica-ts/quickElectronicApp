@@ -378,7 +378,7 @@ p
 	.container1 
 	{
 		width:900px;
-		margin-left:25px;
+		margin-left:35px;
 		display:flex;
 		flex-direction: column;
 	}
@@ -399,7 +399,7 @@ p
 
 	.lionchip, .mecatronium
 	{
-		width:500px;
+		width:300px;
 	}
 	
 }
