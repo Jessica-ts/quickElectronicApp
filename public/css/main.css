@@ -392,6 +392,16 @@ p
 		margin-bottom: 40px;
 	}
 
+	.navbar-toggler
+	{
+		margin-left: auto;
+	}
+
+	.videoEstilos
+	{
+		margin-bottom: 30px;
+	}
+
 	
 }
 
