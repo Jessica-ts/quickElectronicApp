@@ -218,15 +218,6 @@ p
 	justify-content: flex-end;
 }
 
-.find-book
-{
-	color: #fff;
-	margin-bottom: 30px;
-	font-size: 45px ;
-	letter-spacing: 2px;
-	text-align: center;
-}
-
 .search-btn
 {
 	height: 50px;
@@ -410,7 +401,6 @@ p
 
 @media(min-width: 521px) and (max-width: 900px)
 {
-	
 	.logo
 	{
 		width: 200px;
@@ -427,15 +417,12 @@ p
   		left: 0;
 	}
 
-	.navbar-nav
-	{
-		margin-left: auto;
-	}
 }
 
 @media(min-width: 901px)
 {
-	.logo{
+	.logo
+	{
 		width: 300px;
 		margin: 40px 0px 20px 410px;
 	}
