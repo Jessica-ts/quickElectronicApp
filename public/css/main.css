@@ -360,10 +360,10 @@ p
 	footer
 	{
   		background-color: #02AAD1; 
-  		height:30px;
+  		height:60px;
   		position: fixed;
   		width: 100%;
-  		bottom: 5px;
+  		bottom: 0;
   		left: 0;
 	}
 
@@ -378,7 +378,7 @@ p
 	.container1 
 	{
 		width:900px;
-		margin:25px auto 110px;
+		margin-left:25px;
 		display:flex;
 		flex-direction: column;
 	}
@@ -395,6 +395,11 @@ p
 		margin-bottom: 15px;
 		display: flex;
 		justify-content: center;
+	}
+
+	.lionchip, .mecatronium
+	{
+		width:500px;
 	}
 	
 }
