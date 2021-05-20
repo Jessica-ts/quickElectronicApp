@@ -96,13 +96,6 @@ p
 	width: 300px;
 	margin-bottom: 5px;
 }
-
-.container1 
-{
-	width:900px;
-	margin:25px auto 110px;
-	display:flex;
-}
 	
 .container1 .box 
 {
@@ -392,6 +385,12 @@ p
 		width: 425px;
 		margin-left:12px;
 	}
+
+	.bottomTiendas
+	{
+		margin-bottom: 25px;
+	}
+
 	
 }
 
@@ -441,6 +440,13 @@ p
 	.bottomTiendas
 	{
 		margin-bottom: 60px;
+	}
+
+	.container1 
+	{
+		width:900px;
+		margin:25px auto 110px;
+		display:flex;
 	}
 
 }
