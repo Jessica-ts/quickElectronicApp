@@ -398,6 +398,13 @@ p
 		flex-direction: column;
 		justify-content: center;
 	}
+
+	.lionchip, .electronica, .techmake, .mecatronium, .steren
+	{
+		margin-bottom: 15px;
+		display: flex;
+		justify-content: center;
+	}
 	
 }
 
