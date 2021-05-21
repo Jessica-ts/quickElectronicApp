@@ -330,7 +330,7 @@ p
 	.logo
 	{
 		width: 230px;
-		margin: auto;
+		margin: 100px auto 20px;
 	}
 
 	footer
@@ -408,7 +408,7 @@ p
 	{
 		display: block;
 		width: 200px;
-		margin: auto;
+		margin: 40px auto 20px;
 	}
 
 	footer
