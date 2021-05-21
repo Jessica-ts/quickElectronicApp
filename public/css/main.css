@@ -395,6 +395,7 @@ p
 	.navbar-toggler
 	{
 		margin-left: auto;
+		width:150px;
 	}
 
 	.videoEstilos
