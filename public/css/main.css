@@ -247,6 +247,11 @@ p
 		margin-bottom: 10px;
 }
 
+.contenedorAcerca
+{
+	margin-bottom: 115px;
+}
+
 .btnDelete:hover
 {
 	background: darkslategray;
@@ -315,12 +320,6 @@ p
 	margin-left: 10px;
 }
 
-
-.contenedorAcerca
-{
-	margin-bottom: 115px;
-}
-
 .ytButton
 {
 	display: none;
@@ -337,7 +336,7 @@ p
 	.logo
 	{
 		width: 230px;
-		margin: 40px 0px 20px 150px;
+		margin: 40px 0px 20px 100px;
 	}
 
 	footer
@@ -395,21 +394,20 @@ p
 	.navbar-toggler
 	{
 		margin-left: auto;
-		
 		color:white;
 	}
 
 	.home
 	{
 		width: 50px;
-		margin-top: 20px;
+		margin-top: 13px;
 	}
 
-	.navbar-toggler-icon
+	/*.navbar-toggler-icon
 	{
 		display: flex;
 		justify-content: center;
-	}
+	}*/
 
 	.videoEstilos
 	{
@@ -439,16 +437,14 @@ p
 	.navbar-toggler
 	{
 		margin-left: auto;
-		
 		color:white;
 	}
 
-
-	.navbar-toggler-icon
+	/*.navbar-toggler-icon
 	{
 		display: flex;
 		justify-content: center;
-	}
+	}*/
 
 }
 
@@ -457,7 +453,7 @@ p
 	.logo
 	{
 		width: 300px;
-		margin: 40px 0px 20px 410px;
+		margin: 40px 0px 20px 400px;
 	}
 
 	footer
