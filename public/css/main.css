@@ -434,6 +434,21 @@ p
 		margin-top: 5px;
 	}
 
+	.topTiendas, .bottomTiendas
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.container1 
+	{
+		width:900px;
+		margin-left:55px;
+		display:flex;
+		flex-direction: column;
+	}
+
 }
 
 @media(min-width: 1024px)
