@@ -241,10 +241,10 @@ p
 
 .btnDelete
 {
-		display: block;
-		color: white;
-		background: darkcyan;
-		margin-bottom: 10px;
+	display: block;
+	color: white;
+	background: darkcyan;
+	margin-bottom: 10px;
 }
 
 .contenedorAcerca
@@ -303,22 +303,11 @@ p
 	margin-bottom: 20px;
 }
 
-.topTiendas, .bottomTiendas
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
 .topTiendas div, .bottomTiendas div
 {
 	border: 2px solid #001D7E;
 }
 
-.electronica, .techmake, .steren
-{
-	margin-left: 10px;
-}
 
 .ytButton
 {
@@ -353,7 +342,6 @@ p
   		bottom: 0;
   		left: 0;
 	}
-
 
 	.topTiendas, .bottomTiendas
 	{
@@ -406,6 +394,11 @@ p
 	{
 		margin-bottom: 30px;
 	}
+
+	title
+	{
+		margin: auto;
+	}
 	
 }
 
@@ -449,6 +442,19 @@ p
 		flex-direction: column;
 	}
 
+	.top, .bottom
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 15px;
+	}
+
+	title
+	{
+		margin: auto;
+	}
+
 }
 
 @media(min-width: 1024px)
@@ -484,6 +490,18 @@ p
 		width:900px;
 		margin:25px auto 110px;
 		display:flex;
+	}
+
+	.topTiendas, .bottomTiendas
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.electronica, .techmake, .steren
+	{
+		margin-left: 10px;
 	}
 
 }
