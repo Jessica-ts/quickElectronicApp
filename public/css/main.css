@@ -388,7 +388,12 @@ p
 	{
 		display: block;
 		width: 200px;
-		margin: 150px auto 0px;
+		margin: 250px auto 0px;
+	}
+
+	.card-body
+	{
+		width: 100px;
 	}
 
 	footer
@@ -427,6 +432,7 @@ p
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		text-align: center;
 		margin-left: 150px;
 	}
 
