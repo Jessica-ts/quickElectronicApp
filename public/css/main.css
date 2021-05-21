@@ -336,7 +336,7 @@ p
 	color:white;
 }
 
-@media (max-width: 750px)
+@media (max-width: 780px)
 {
 	.logo
 	{
@@ -409,7 +409,7 @@ p
 	
 }
 
-@media(min-width: 751px) and (max-width: 990px)
+@media(min-width: 781px) and (max-width: 940px)
 {
 	.logo
 	{
@@ -420,7 +420,7 @@ p
 	footer
 	{
   		background-color: #02AAD1; 
-  		height:30px;
+  		height:60px;
   		position: fixed;
   		width: 100%;
   		bottom: 5px;
@@ -429,7 +429,7 @@ p
 
 }
 
-@media(min-width: 991px)
+@media(min-width: 941px)
 {
 	.logo
 	{
