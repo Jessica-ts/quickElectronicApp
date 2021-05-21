@@ -336,7 +336,7 @@ p
 	color:white;
 }
 
-@media (max-width: 550px)
+@media (max-width: 650px)
 {
 	.logo
 	{
@@ -409,7 +409,7 @@ p
 	
 }
 
-@media(min-width: 551px) and (max-width: 900px)
+@media(min-width: 651px) and (max-width: 900px)
 {
 	.logo
 	{
