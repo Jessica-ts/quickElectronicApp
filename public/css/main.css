@@ -330,6 +330,11 @@ p
 	text-align: center;
 }
 
+.navbar-toggler
+{
+	margin-left: auto;
+	color:white;
+}
 
 @media (max-width: 550px)
 {
@@ -391,23 +396,11 @@ p
 		margin-bottom: 40px;
 	}
 
-	.navbar-toggler
-	{
-		margin-left: auto;
-		color:white;
-	}
-
 	.home
 	{
 		width: 50px;
-		margin-top: 13px;
+		margin-top: 5px;
 	}
-
-	/*.navbar-toggler-icon
-	{
-		display: flex;
-		justify-content: center;
-	}*/
 
 	.videoEstilos
 	{
@@ -433,18 +426,6 @@ p
   		bottom: 5px;
   		left: 0;
 	}
-
-	.navbar-toggler
-	{
-		margin-left: auto;
-		color:white;
-	}
-
-	/*.navbar-toggler-icon
-	{
-		display: flex;
-		justify-content: center;
-	}*/
 
 }
 
