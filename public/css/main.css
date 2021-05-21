@@ -401,7 +401,7 @@ p
 
 	.home
 	{
-		width: 65px;
+		width: 50px;
 		margin-top: 20px;
 	}
 
@@ -434,6 +434,20 @@ p
   		width: 100%;
   		bottom: 5px;
   		left: 0;
+	}
+
+	.navbar-toggler
+	{
+		margin-left: auto;
+		
+		color:white;
+	}
+
+
+	.navbar-toggler-icon
+	{
+		display: flex;
+		justify-content: center;
 	}
 
 }
