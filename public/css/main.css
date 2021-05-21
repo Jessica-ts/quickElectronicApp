@@ -336,8 +336,8 @@ p
 {
 	.logo
 	{
-		width: 280px;
-		margin: 150px 0px 20px 150px;
+		width: 230px;
+		margin: 40px 0px 20px 150px;
 	}
 
 	footer
@@ -396,8 +396,14 @@ p
 	{
 		margin-left: auto;
 		width:45px;
-		height: 45px;
+		height: 55px;
 		color:white;
+	}
+
+	.home
+	{
+		width: 100px;
+		margin-top: 50px;
 	}
 
 	.navbar-toggler-icon
