@@ -330,7 +330,7 @@ p
 	.logo
 	{
 		width: 230px;
-		margin: 40px 0px 20px 100px;
+		margin: auto;
 	}
 
 	footer
@@ -408,7 +408,7 @@ p
 	{
 		display: block;
 		width: 200px;
-		margin: 40px auto 20px;
+		margin: auto;
 	}
 
 	footer
@@ -449,12 +449,6 @@ p
 		justify-content: center;
 		margin-left: 15px;
 	}
-
-	title
-	{
-		margin: auto;
-	}
-
 }
 
 @media(min-width: 1024px)
