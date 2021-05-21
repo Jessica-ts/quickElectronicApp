@@ -394,7 +394,13 @@ p
 	.card-body
 	{
 		width: 332px;
-		height: 242px
+		height: 242px;
+	}
+
+	.card-header 
+	{
+		width: 340px;
+		height: 250px;
 	}
 
 	footer
@@ -434,7 +440,7 @@ p
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		margin-left: 100px;
+		margin-left: 90px;
 	}
 
 	.lionchip, .electronica, .techmake, .mecatronium, .steren
