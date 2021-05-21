@@ -388,12 +388,13 @@ p
 	{
 		display: block;
 		width: 200px;
-		margin: 250px auto 0px;
+		margin: 450px auto 0px;
 	}
 
 	.card-body
 	{
-		width: 100px;
+		width: 200px;
+		height: 200px
 	}
 
 	footer
