@@ -425,7 +425,7 @@ p
 	.container1 
 	{
 		width:900px;
-		margin-left: 100px;
+		margin-left: 180px;
 		display:flex;
 		flex-direction: column;
 	}
@@ -435,7 +435,7 @@ p
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-left: 55px;
+		margin-left: 100px;
 	}
 
 	.lionchip, .electronica, .techmake, .mecatronium, .steren
