@@ -220,7 +220,6 @@ p
 	cursor: pointer;
 }
 
-
 .separa
 {
 	padding-bottom: 2px;
@@ -272,13 +271,6 @@ p
 .row
 {
 	margin-bottom: 70px;
-}
-
-.top, .bottom
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
 
 .video
@@ -396,7 +388,7 @@ p
 	{
 		display: block;
 		width: 200px;
-		margin: 90px auto 20px;
+		margin: 150px auto 0px;
 	}
 
 	footer
@@ -435,7 +427,7 @@ p
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-left: 180px;
+		margin-left: 150px;
 	}
 
 	.lionchip, .electronica, .techmake, .mecatronium, .steren
@@ -507,6 +499,13 @@ p
 	.home
 	{
 		width: 8%;
+	}
+
+	.top, .bottom
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 }
