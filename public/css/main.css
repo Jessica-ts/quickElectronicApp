@@ -61,19 +61,13 @@ p
 .navbar
 {
 	background-color: #02AAD1;
+	width: 100%;
 }
-
 
 #submitButton
 {
 	background-color: #001D7E;
 	color: white;
-}
-
-
-.home
-{
-	width: 8%;
 }
 
 .imageFile
@@ -87,7 +81,6 @@ p
 {
 	margin-top: 100px;
 	text-align: center;
-
 }
 
 .form-group-c
@@ -394,11 +387,6 @@ p
 	{
 		margin-bottom: 30px;
 	}
-
-	title
-	{
-		margin: auto;
-	}
 	
 }
 
@@ -437,7 +425,7 @@ p
 	.container1 
 	{
 		width:900px;
-		margin-left:55px;
+		margin-left: 100px;
 		display:flex;
 		flex-direction: column;
 	}
@@ -447,8 +435,26 @@ p
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-left: 15px;
+		margin-left: 55px;
 	}
+
+	.lionchip, .electronica, .techmake, .mecatronium, .steren
+	{
+		margin-bottom: 25px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.bottomTiendas
+	{
+		margin-bottom: 40px;
+	}
+
+	.videoEstilos
+	{
+		margin-bottom: 30px;
+	}
+
 }
 
 @media(min-width: 1024px)
@@ -496,6 +502,11 @@ p
 	.electronica, .techmake, .steren
 	{
 		margin-left: 10px;
+	}
+
+	.home
+	{
+		width: 8%;
 	}
 
 }
