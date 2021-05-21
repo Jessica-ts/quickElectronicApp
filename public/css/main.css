@@ -400,6 +400,12 @@ p
 		color:white;
 	}
 
+	.navbar-toggler-icon
+	{
+		display: flex;
+		justify-content: center;
+	}
+
 	.videoEstilos
 	{
 		margin-bottom: 30px;
