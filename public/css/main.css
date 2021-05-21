@@ -323,7 +323,7 @@ p
 	.logo
 	{
 		width: 230px;
-		margin: 100px auto 20px;
+		margin: 100px 0px 20px 100px;
 	}
 
 	footer
@@ -396,7 +396,7 @@ p
 	{
 		display: block;
 		width: 200px;
-		margin: 40px auto 20px;
+		margin: 90px auto 20px;
 	}
 
 	footer
@@ -435,7 +435,7 @@ p
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-left: 100px;
+		margin-left: 180px;
 	}
 
 	.lionchip, .electronica, .techmake, .mecatronium, .steren
