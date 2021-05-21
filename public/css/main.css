@@ -395,15 +395,14 @@ p
 	.navbar-toggler
 	{
 		margin-left: auto;
-		width:45px;
-		height: 70px;
+		
 		color:white;
 	}
 
 	.home
 	{
 		width: 65px;
-		margin-top: 25px;
+		margin-top: 20px;
 	}
 
 	.navbar-toggler-icon
