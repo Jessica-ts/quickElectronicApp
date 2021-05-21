@@ -399,8 +399,14 @@ p
 
 	.card
 	{
-		width: 350px;
+		width: 330px;
 		height: 300px;
+	}
+
+	.row
+	{
+		display: flex;
+		justify-content: center;
 	}
 
 	footer
