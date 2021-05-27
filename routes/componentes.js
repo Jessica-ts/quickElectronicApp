@@ -107,6 +107,37 @@ router.get('/componentes/comentar', isAuthenticated, async (req, res) =>
 });
 
 
+router.post('/componentes/comentar', isAuthenticated, async (req, res) => 
+{
+	const {comment, postedBy} = req.body;
+	const errors = [];
+
+	if(!comment)
+	{
+		errors.push({text: 'Escribe un comentario'});
+	}
+	else if(!postedBy)
+	{
+		errors.push({text: 'Escribe un nombre'});
+	}
+
+	else
+	{
+		const newComment = new Comment(
+		{
+			post_id :uuid(),
+			comment : req.body.comment,
+			postedBy: req.body.postedBy
+		});
+
+		//newComment.post_id = uuid();
+		await newComment.save();
+		req.flash('success_msg', 'Comentario agregado correctamente');
+	}
+	res.redirect('/comentar');
+});
+
+
 router.get('/componentes/editar/:id',isAuthenticated, async (req, res) => {
 	const componente = await Componente.findById(req.params.id);	
 	console.log(componente);
@@ -123,7 +154,7 @@ router.put('/componentes/editar-componente/:id', isAuthenticated, jsonParser, as
     else
     	await Componente.findByIdAndUpdate(req.params.id, { nombre, descripcion});
 
-    req.flash('success_msg', 'Note Update successfuly');
+    req.flash('success_msg', 'Componente editado exitosamente');
 	res.redirect('/componentes');	
 });
 
