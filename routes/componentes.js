@@ -13,6 +13,7 @@ const {isAuthenticated} = require('../helpers/auth');
 
 let bodyParser = require('body-parser');
 let jsonParser = bodyParser.json();
+let uuid = require('uuid/v4');
 
 router.get('/componentes/add', isAuthenticated, (req, res) => 
 {
